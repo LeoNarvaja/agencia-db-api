@@ -30,4 +30,55 @@ public class Vehiculo {
     @JoinColumn(name = "ID_MODELO")
     private Modelo modelo;
 
+    public Vehiculo() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getPatente() {
+        return patente;
+    }
+
+    public void setPatente(String patente) {
+        this.patente = patente;
+    }
+
+    public int getAnio() {
+        return anio;
+    }
+
+    public void setAnio(int anio) {
+        this.anio = anio;
+    }
+
+    public List<Prueba> getPruebas() {
+        return pruebas;
+    }
+
+    public void setPruebas(List<Prueba> pruebas) {
+        this.pruebas = pruebas;
+    }
+
+    public List<Posicion> getPosiciones() {
+        return posiciones;
+    }
+
+    public void setPosiciones(List<Posicion> posiciones) {
+        this.posiciones = posiciones;
+    }
+
+    public Modelo getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(Modelo modelo) {
+        this.modelo = modelo;
+    }
+
 }

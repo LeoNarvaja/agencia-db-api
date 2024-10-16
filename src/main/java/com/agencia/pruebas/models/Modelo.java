@@ -23,4 +23,45 @@ public class Modelo {
     @JoinColumn(name = "ID_MARCA", referencedColumnName = "ID")
     private Marca marca;
 
+    public Modelo() {
+    }
+
+    public Modelo(String descripcion, List<Vehiculo> vehiculos, Marca marca) {
+        this.descripcion = descripcion;
+        this.vehiculos = vehiculos;
+        this.marca = marca;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Marca getMarca() {
+        return marca;
+    }
+
+    public void setMarca(Marca marca) {
+        this.marca = marca;
+    }
+
+    public List<Vehiculo> getVehiculos() {
+        return vehiculos;
+    }
+
+    public void setVehiculos(List<Vehiculo> vehiculos) {
+        this.vehiculos = vehiculos;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
 }

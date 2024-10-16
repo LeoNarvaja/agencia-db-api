@@ -38,4 +38,91 @@ public class Interesado {
     @OneToMany(mappedBy = "interesado")
     private List<Prueba> pruebas;
 
+
+    public Interesado() {
+    }
+
+    public Interesado(String tipoDocumento, Boolean restringido, String apellido, String nombre, String documento, int nroLicencia, LocalDate fechaVencimientoLicencia, List<Prueba> pruebas) {
+        this.tipoDocumento = tipoDocumento;
+        this.restringido = restringido;
+        this.apellido = apellido;
+        this.nombre = nombre;
+        this.documento = documento;
+        this.nroLicencia = nroLicencia;
+        this.fechaVencimientoLicencia = fechaVencimientoLicencia;
+        this.pruebas = pruebas;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTipoDocumento() {
+        return tipoDocumento;
+    }
+
+    public void setTipoDocumento(String tipoDocumento) {
+        this.tipoDocumento = tipoDocumento;
+    }
+
+    public String getDocumento() {
+        return documento;
+    }
+
+    public void setDocumento(String documento) {
+        this.documento = documento;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public Boolean getRestringido() {
+        return restringido;
+    }
+
+    public void setRestringido(Boolean restringido) {
+        this.restringido = restringido;
+    }
+
+    public int getNroLicencia() {
+        return nroLicencia;
+    }
+
+    public void setNroLicencia(int nroLicencia) {
+        this.nroLicencia = nroLicencia;
+    }
+
+    public LocalDate getFechaVencimientoLicencia() {
+        return fechaVencimientoLicencia;
+    }
+
+    public void setFechaVencimientoLicencia(LocalDate fechaVencimientoLicencia) {
+        this.fechaVencimientoLicencia = fechaVencimientoLicencia;
+    }
+
+    public List<Prueba> getPruebas() {
+        return pruebas;
+    }
+
+    public void setPruebas(List<Prueba> pruebas) {
+        this.pruebas = pruebas;
+    }
+
 }
